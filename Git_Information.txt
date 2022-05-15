@@ -1,3 +1,28 @@
+!!! *** Git Files Status LifeStyle *** !!!
+
+.| Untracked |          | Unmodified |          | Modified |          | Staged |
+.     |                       |                       |                    |
+.     |---------------------|\|                       |                    |
+.     |     Add The File      X                       |                    |
+.     |---------------------|/|                       |                    |
+.     |                       |                       |                    |
+.     |                       |---------------------|\|                    |
+.     |                       |     Edit The File     X                    |
+.     |                       |---------------------|/|                    |
+.     |                       |                       |                    |
+.     |/|---------------------|                       |------------------|\|
+.     X    Remove The File    |                       |   Stage The File   X
+.     |\|---------------------|                       |------------------|/|
+.     |                       |                       |                    |
+.     |                       |/|------------------------------------------|
+.     |                       |               Commit The File              |
+.     |                       |\|------------------------------------------|
+.     |                       |                       |                    |
+|--------------------------------------------------------------------------|
+
+
+!!! *** Git Commands ***!!!
+
 Initializing / Logging Commands:
 
 $ git config --global user.name "@name" - Stores Name of The User Which Can Be Given as @name.
@@ -5,15 +30,15 @@ $ git config --global user.email @email - Stores Email id of The User Which Can 
 
 Common Commands:
 
-$ git add @file                         - Adds The File to 
+$ git add @file                         - Adds The File to Stagging Area. 
 $ git status                            - Shows The Status of Working Tree. [local]
 
 Linux Commands:
 
 $ ls                                    - Shows All Files In List Format. 
-$ pwd                                   - Shows The Path of Present Working Directory
-$ cd                                    - Changes The Path Of Working Directorm
-
+$ pwd                                   - Shows The Path of Present Working Directory.
+$ cd                                    - Changes The Path Of Working Directory.
+$ touch @file                           - Creating New File At Current Directory.
 
 
 

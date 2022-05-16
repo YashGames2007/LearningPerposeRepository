@@ -66,34 +66,39 @@
 Initializing / Logging Commands:
 
 $ git init                              - Initialize New Local Git Repository.
-$ git clone @remoteURL                  - Initialize a Copy of Desired Remote Repository With Using URL.
+$ git clone @remoteURL @newname         - Initialize a Copy of Desired Remote Repository With Using URL. (Renamed As newname if given)
 $ git config --global user.name "@name" - Stores Name of The User Which Can Be Given as @name.
 $ git config --global user.email @email - Stores Email id of The User Which Can Be Given as @email.
 
 Common Commands:
 
 $ git status                            - Shows The Status of Working Tree. [local]
+$ git diff                              - Compares Working Directory with Stagging Area. 
+$ git diff --staged                     - Compares Stagging Area With Last Commit.
+$ git rm @file                          - Remove/Delete An Desired File. (Also Get Staged)
+$ git mv @file @newname                 - Renames The File With Giving It New Name. (Also Get Staged)
+$ git rm --cached @file                 - Untrakes The Desired Tracking File. (Also Delete it From Stagging Area)
+
+Log Commands:
+
 $ git log                               - Shows All Commit Massages and Thier Author's Name & Email With Date And Time Respectively.
 $ git log -@n                           - Shows Last n commit Massages.
+$ git log -p                            - Shows All Commit Massages and Thier Author's Name, Email, Date, Time With The Changes Made In The Repository.
+$ git log --stat                        - Shows Summarized Commit Massages With Respective Information About Author, Insertions & Deletions.
+$ git log --since@n.@block              - Shows The Commit Log For Commits of Last n blocks.(minutes, hours, days, weeks, etc.)
+$ git log --pretty@format_Place_Holders - Shows The Formated Log of Commits With Reference To Format Place Holders. [ For More Information, Please Visit: https://git-scm.com/docs/pretty-formats At Git's Documentation ]
 
 Staging Commands:
 
 $ git add @file                         - Adds The File to Stagging Area. 
-$ git add --a                           - Adds All File to Stagging Area. 
+$ git add --a / $ git add .             - Adds All File to Stagging Area. 
 
 Commiting Commands:
 
 $ git commit @file                      - Commits The Staged Files. (Opens Editor To Get Commit Massage)
 $ git commit -m "@massage"              - Commits The Staged Files. (Accept The Commit Massage Passed Through)
 $ git commit -a                         - Commits All The Files. (Staged and Unstaged)
-
-Other Commands:
-
-$ git diff                              - Compares Working Directory with Stagging Area. 
-$ git diff --staged                     - Compares Stagging Area With Last Commit.
-$ git rm @file                          - Remove/Delete An Desired File. (Also Get Staged)
-$ git mv @file @newname                 - Renames The File With Giving It New Name. (Also Get Staged)
-$ git rm --cached @file                 - Untrakes The Desired Tracking File. (Also Delete it From Stagging Area)
+$ git commit --amend                    - Merge The Changes Into Last Commit - If Staged. (Also We Can Change Commit Massage)
 
 Linux Commands:
 

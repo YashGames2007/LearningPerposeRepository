@@ -23,6 +23,7 @@
 |       |                       |                       |                     |      |
 +-------+-----------------------+-----------------------+---------------------+------+
 
+
 !!! *** Git Architecture *** !!!
 
 +----------------------------------------------------------------------+---------------------------+
@@ -37,39 +38,55 @@
 |       |  Stage The Files    X                        |               |               |           |
 |       |-------------------|/|                        |               |               |           |
 |       |                     |                        |               |               |           |
-|       |                     |----------------------|\|               |               |           |
-|       |                     |   Commit The Files     X               |               |           |
-|       |                     |----------------------|/|               |               |           |
-|       |                     |                        |               |               |           |
 |       |/|--------------------------------------------|               |               |           |
 |       X            Checkout The Files                |               |               |           |
-|       |\|--------------------------------------------|               |               |           |
-|       |                     |                        |               |               |           |
-|       |/|--------------------------------------------|               |               |           |
-|       X              Merge The Files                 |               |               |           |
 |       |\|--------------------------------------------|               |               |           |
 |       |                     |                        |               |               |           |
 |       |                     |                        |/|-----------------------------|           |
 |       |                     |                        X         Pull The Files        |           |
 |       |                     |                        |\|-----------------------------|           |
 |       |                     |                        |               |               |           |
+|       |                     |----------------------|\|               |               |           |
+|       |                     |   Commit The Files     X               |               |           |
+|       |                     |----------------------|/|               |               |           |
+|       |                     |                        |               |               |           |
 |       |                     |                        |-----------------------------|\|           |
 |       |                     |                        |         Push The Files        X           |
 |       |                     |                        |-----------------------------|/|           |
 |       |                     |                        |               |               |           |
+|       |/|--------------------------------------------|               |               |           |
+|       X              Merge The Files                 |               |               |           |
+|       |\|--------------------------------------------|               |               |           |
+|       |                     |                        |               |               |           |
 +-------+---------------------+------------------------+---------------+---------------+-----------+
 
-!!! *** Git Commands ***!!!
+
+!!! *** Git Bash Commands ***!!!
 
 Initializing / Logging Commands:
 
+$ git init                              - Initialize New Local Git Repository.
+$ git clone @remoteURL                  - Initialize a Copy of Desired Remote Repository With Using URL.
 $ git config --global user.name "@name" - Stores Name of The User Which Can Be Given as @name.
 $ git config --global user.email @email - Stores Email id of The User Which Can Be Given as @email.
 
 Common Commands:
 
-$ git add @file                         - Adds The File to Stagging Area. 
 $ git status                            - Shows The Status of Working Tree. [local]
+$ git log                               - Shows All Commit Massages and Thier Author's Name & Email With Date And Time Respectively.
+$ git log -@n                           - Shows Last n commit Massages
+
+Staging Commands:
+
+$ git add @file                         - Adds The File to Stagging Area. 
+$ git add --a                           - Adds All File to Stagging Area. 
+
+Commiting Commands:
+
+$ git commit @file                      - Commits The Staged Files. (Opens Editor To Get Commit Massage)
+$ git commit -m "@massage"              - Commits The Staged Files. (Accept The Commit Massage Passed Through)
+$ git commit -a                         - Commits All The Files. (Staged and Unstaged.)
+
 
 Linux Commands:
 
@@ -77,10 +94,10 @@ $ ls                                    - Shows All Files In List Format.
 $ pwd                                   - Shows The Path of Present Working Directory.
 $ cd                                    - Changes The Path Of Working Directory.
 $ touch @file                           - Creating New File At Current Directory.
+$ rm -rf .git                           - Removes/Deletes The .git Folder. (Disband The Git Local Repository)
 
 
-
-
+!!! *** Git Help OutPut *** !!!
 
 These are common Git commands used in various situations:
 

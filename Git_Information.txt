@@ -93,6 +93,11 @@ Staging Commands:
 $ git add @file                         - Adds The File to Stagging Area. 
 $ git add --a / $ git add .             - Adds All File to Stagging Area. 
 
+Unstaging Commands :
+
+$ git restore --staged @file            - Removes The File From Staging Area And Add To Modified Files.
+$ git restore --staged .                - Removes All The Files From Staging Area And Add Them To Modified Files.
+
 Commiting Commands:
 
 $ git commit @file                      - Commits The Staged Files. (Opens Editor To Get Commit Massage)

@@ -105,6 +105,11 @@ $ git commit -m "@massage"              - Commits The Staged Files. (Accept The 
 $ git commit -a                         - Commits All The Files. (Staged and Unstaged)
 $ git commit --amend                    - Merge The Changes Into Last Commit - If Staged. (Also We Can Change Commit Massage)
 
+Restoring Commands :
+
+$ git checkout -- @file                 - Restores The Data In A File By Maching It With The Last Commit. (Only When The File Is Not In The Staging Area)
+$ git checkout -- @file                 - Restores The Data In All The Files By Maching It With The Last Commit. (Only When The Files Are Not In The Staging Area)
+
 Linux Commands:
 
 $ ls                                    - Shows All Files In List Format. 

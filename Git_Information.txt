@@ -108,7 +108,8 @@ $ git commit --amend                    - Merge The Changes Into Last Commit - I
 Restoring Commands :
 
 $ git checkout -- @file                 - Restores The Data In A File By Maching It With The Last Commit. (Only When The File Is Not In The Staging Area)
-$ git checkout -f                       - Restores The Data In All The Files By Maching It With The Last Commit. (Only When The Files Are Not In The Staging Area)
+$ git checkout -- .                     - Restores The Data In All The Files By Maching It With The Last Commit. (Only When The File Is Not In The Staging Area)
+$ git checkout -f                       - Restores The Data In All The Files By Maching It With The Last Commit.
 
 Linux Commands:
 

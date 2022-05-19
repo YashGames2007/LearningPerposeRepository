@@ -111,6 +111,10 @@
       $ git checkout -- .                     - Restores The Data In All The Files By Maching It With The Last Commit. (Only When The File Is Not In The Staging Area)
       $ git checkout -f                       - Restores The Data In All The Files By Maching It With The Last Commit.
 
+   Shortcut Building Commands :
+
+      $ git config --global alias.@key @command - Adds A Shortcut Key To Access an Command.
+
    Linux Commands:
 
       $ ls                                    - Shows All Files In List Format. 

@@ -69,6 +69,7 @@
    |                                |                                 |
    | $ git status                   | $ git s                         |
    | $ git config --global -l       | $ git info                      |
+   | $ git checkout                 | $ git switch                    |
    |                                |                                 |
    +--------------------------------+---------------------------------+
    | TIP: To Add New ShortCut Keys Without Command Open .gitconfig    |

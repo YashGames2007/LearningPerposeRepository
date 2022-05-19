@@ -61,6 +61,22 @@
    +-------+---------------------+------------------------+---------------+---------------+-----------+
 
 
+!!! *** Git Personal Global ShortCut Commands ***!!!
+
+   +--------------------------------+---------------------------------+
+   |          GIT COMMANDS          |          SHORTCUT KEYS          |
+   +--------------------------------+---------------------------------+
+   |                                |                                 |
+   | $ git status                   | $ git stat                      |
+   | $ git config --global -l       | $ git info                      |
+   | $ git                          | $ git                           |
+   |                                |                                 |
+   +--------------------------------+---------------------------------+
+   | TIP: To Add New ShortCut Keys Without Command Open .gitconfig    |
+   |      In VS Code From Local Path : C:\Users\manoj                 |
+   +--------------------------------+---------------------------------+
+
+
 !!! *** Git Bash Commands ***!!!
 
    Initializing / Logging Commands:

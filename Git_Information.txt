@@ -136,6 +136,11 @@
       $ git branch -d @branch                   - Deletes The Desired Branch. (Shows Error If The Branch Is Not Merged) 
       $ git branch -D @branch                   - Deletes The Desired Branch Directly. 
 
+   Remote Push Commands :
+
+      $ git push -u @remote @branch             - Pushes The Branch Into Remote.
+      $ git push -d @remote @branch             - Deletes The Branch In The Remote.  
+
    Shortcut Building Commands :
 
       $ git config --global alias.@key @command - Adds A Shortcut Key To Access an Command.

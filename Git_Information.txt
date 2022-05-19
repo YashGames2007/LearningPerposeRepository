@@ -130,6 +130,7 @@
 
       $ git checkout -b @branch                 - Makes A New Branch With Current Directory & Gets Automatically Switched Into It.
       $ git checkout @branch                    - Swiches The Directory Into An Existing Branch.
+      $ git merge @branch                       - Merges The Changes Desired Branch In The Master (Main) Branch.
 
    Shortcut Building Commands :
 
